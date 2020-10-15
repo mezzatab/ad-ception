@@ -8,7 +8,6 @@ import Preprocess
 
 testSize=120    ## testSize
 sampleSize=2#ls Metric0  ## HyperParam sampleSize 
-ID=4230133468 ## ID of wells 
 stages=[i for i in range(2,21)]
 #stages.append(15)
 #stages=[15]0

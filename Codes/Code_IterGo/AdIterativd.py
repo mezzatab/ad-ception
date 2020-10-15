@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 ## Start from The beginning ## 
-## Time series from (0,T) using sliding window turn into small images with output Pressure ## 
 import setup 
 import Preprocess 
 import numpy as np
@@ -24,7 +23,7 @@ from pprint import pprint
 #np.random.seed(42)
 #set_random_seed(42)
 
-class WellheadPressurePrediction:
+class AdPrediction:
 
     def __init__(self, df, sample_size, test_size,shortTerm, engine="default"):
         self.df = df

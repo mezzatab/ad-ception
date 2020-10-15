@@ -1,6 +1,5 @@
 ## Start from The beginning ## 
-## Time series from (0,T) using sliding window turn into small images with output Pressure ## 
-#import setup 
+import setup 
 import Preprocess 
 import numpy as np
 import pandas as pd
@@ -24,8 +23,6 @@ np.random.seed(42)
 set_random_seed(42)
 
 
-listNames=["4230133468","4247536931","4247537091","4247537106","l4247537154","4247537186"]
-list_Params=['date_time','stage_number','prop_conc_1','bh_prop_conc','fr_conc_2','slurry_rate','wellhead_pressure_1']
 
 
 df=Preprocess.readFiles("4230133468")

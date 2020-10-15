@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 ## Start from The beginning ## 
-## Time series from (0,T) using sliding window turn into small images with output Pressure ## 
 #import setup 
 import Preprocess 
 import numpy as np
@@ -30,10 +29,7 @@ from Uncertainty import Uncertainty
 #config.gpu_options.allow_growth = True
 #keras.backend.set_session(tf.Session(config=config))
 
-listNames=["4230133468","4247536931","4247537091","4247537106","l4247537154","4247537186"]
-list_Params=['date_time','stage_number','prop_conc_1','bh_prop_conc','fr_conc_2','slurry_rate','wellhead_pressure_1']
 
-ID=4230133468
 df=Preprocess.readFiles(str(ID))
 #print(df)
 df=Preprocess.PreprocessNR(df,list_Params)#,15)

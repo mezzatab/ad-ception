@@ -1,5 +1,4 @@
 ## Start from The beginning ## 
-## Time series from (0,T) using sliding window turn into small images with output Pressure ## 
 import numpy as np
 import pandas as pd
 import tensorflow as tf
