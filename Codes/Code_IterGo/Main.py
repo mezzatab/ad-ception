@@ -1,18 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 28 14:27:48 2019
-
-@author: may706
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 26 13:26:20 2019
-
-@author: may706
-"""
 
 ## Start from The beginning ## 
 ## Time series from (0,T) using sliding window turn into small images with output Pressure ## 

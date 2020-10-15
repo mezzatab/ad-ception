@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 25 13:34:04 2019
-
-@author: may706
-"""
 import setup 
 import Preprocess 
 import numpy as np

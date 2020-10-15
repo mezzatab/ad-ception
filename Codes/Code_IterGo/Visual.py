@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Jul 17 11:11:35 2019
 
-@author: may706
-"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -20,8 +16,6 @@ listSampleSize=[10]#5, 10, 20, 30]#, 60, 120]
 listTestSize=[120]#300, 240, 120]#, 60, 30]     
 
 Name='Adam_IterativeRNN_filter_5Real_s'
-TitleMetric='/home/may706/LinuxBox/MetaData/MetricFrame_'+Name
-TitleData='/home/may706/LinuxBox/MetaData/Uncertainty-Forecast_'+Name
 
 FilesMetric=[[TitleMetric+str(sampleSize)+'_t'+str(testSize)+'.csv' for sampleSize in listSampleSize] for testSize in listTestSize]# for param in HyperParam]
 FilesData=[[TitleData+str(sampleSize)+'_t'+str(testSize)+'.csv' for sampleSize in listSampleSize] for testSize in listTestSize]# for param in HyperParam]
@@ -97,7 +91,6 @@ for i in range(len(listTestSize)):
         #for i in range(0,8000,480):
         plt.xticks(x)
         plt.grid(True)
-        plt.savefig("/home/may706/LinuxBox/Images/"+Name+str(listSampleSize[j])+"_t"+str(listTestSize[i])+".png")
         
         plt.show()
         

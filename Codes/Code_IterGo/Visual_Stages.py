@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 26 18:56:32 2019
-
-@author: may706
-"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -40,10 +35,7 @@ DataFrames=[pd.read_csv(FilesData[i]) for i in range(len(stages))]# in FilesMetr
 
 ########### Raw data ####
 
-listNames=["4230133468","4247536931","4247537091","4247537106","l4247537154","4247537186"]
-list_Params=['date_time','stage_number','prop_conc_1','bh_prop_conc','fr_conc_2','slurry_rate','wellhead_pressure_1']
 
-ID=4230133468
 df=Preprocess.readFiles(str(ID))
 #print(df)
 df=Preprocess.Preprocess(df,list_Params)#,15)
